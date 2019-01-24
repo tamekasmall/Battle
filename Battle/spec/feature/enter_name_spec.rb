@@ -6,7 +6,6 @@ feature 'Enter Name' do
     fill_in :name1, with: "John"
     fill_in :name2, with: "Bob"
     click_button 'Submit!'
-    visit('/play')
       expect(page).to have_content "John Vs Bob"
   end
 end
